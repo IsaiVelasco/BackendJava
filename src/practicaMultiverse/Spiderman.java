@@ -1,6 +1,11 @@
 
 package practicaMultiverse;
 
+import imonsh.Colors;
+import imonsh.Screen;
+
+import java.awt.*;
+
 public abstract class Spiderman {
     private String nombre;
     private String alias;
@@ -70,12 +75,22 @@ public abstract class Spiderman {
     }
 
 
-    public String showMessage() {
-        return "\nNombre: '" + nombre + '\'' +
-                "\nAlias: '" + alias + '\'' +
-                "\nGenero: '" + genero + '\'' +
-                "\nTierra de rigen: '" + tierraOrigen + '\'' +
-                "\nHistoria: \n" + resumenHistoria +
-                '\n';
+    public void showMessage(Screen s, Color ctext, Color ctitle) {
+        s.out(alias+"\n","Impact",25, Colors.FussionRed);
+        s.out("Nombre: ",
+                "Acme",12, ctext);
+        s.out(nombre,
+                "Yu Gothic UI",12, ctext);
+        s.out("\tGenero: ",
+                "Acme",12, ctext);
+        s.out(genero,
+                "Yu Gothic UI",12, ctext);
+        s.out("\tOrigen: ",
+                "Acme",12, ctext);
+        s.out(tierraOrigen,
+                "Yu Gothic UI",12, ctext);
+        s.out("\n\nHISTORIA\n\n","Comic Sans MS",15, ctitle);
+        s.out(resumenHistoria+"\n","Yu Gothic UI",12, ctext);
+
     }
 }
