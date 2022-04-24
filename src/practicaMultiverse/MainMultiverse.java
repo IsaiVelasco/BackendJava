@@ -35,14 +35,18 @@ public class MainMultiverse {
         );
 
         screenCapSpider.setVisible(true);
-        screenCapSpider.showImage(capSpider.getPathImagen());
         screenCapSpider.out(capSpider.showMessage());
+        screenCapSpider.showImage(capSpider.getPathImagen());
+        screenCapSpider.out(capSpider.soltarTela());
 
         screenGhostSpider.setVisible(true);
-
+        screenGhostSpider.out(ghostSpider.showMessage());
         screenGhostSpider.showImage(ghostSpider.getPathImagen());
+        screenGhostSpider.out(ghostSpider.soltarTela());
 
         screenSilk.setVisible(true);
+        screenSilk.out(ghostSpider.showMessage());
         screenSilk.showImage(silk.getPathImagen());
+        screenSilk.out(silk.soltarTela());
     }
 }

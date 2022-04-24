@@ -9,22 +9,22 @@ public class Silk extends Spiderman implements SilkActionCallbacks{
 
     @Override
     public String extraAgilidad() {
-        return "Usando extraagilidad";
+        return "\nUsando extraagilidad";
     }
 
     @Override
     public String garrasRetractiles() {
-        return "Usando garras para atacar";
+        return "\nUsando garras para atacar";
     }
 
     @Override
     public String soltarTela() {
-        return "Soltando telarañas con glandulas secretoras de los dedos";
+        return "\nSoltando telarañas con glandulas secretoras de los dedos";
     }
 
     @Override
     public String aderirseAUnMuro() {
-        return "Aderiendose controlando mentalmente el flujo de atracción " +
+        return "\nAderiendose controlando mentalmente el flujo de atracción " +
                 "interatómica (electrostática) entre el límite molecular de las superficies,";
     }
 }

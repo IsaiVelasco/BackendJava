@@ -10,12 +10,12 @@ public class CapitanSpider extends Spiderman implements CapitanSpiderActionCallb
 
     @Override
     public String soltarTela() {
-        return "Sacando tela por mis entrañas";
+        return "\nSacando tela por mis entrañas";
     }
 
     @Override
     public String aderirseAUnMuro() {
-        return "Escalando muro con manos y pies";
+        return "\nEscalando muro con manos y pies";
     }
 
     @Override
@@ -25,6 +25,6 @@ public class CapitanSpider extends Spiderman implements CapitanSpiderActionCallb
 
     @Override
     public String lanzarAtaqueFlash() {
-        return "LanzANDO ATAQUE FLASH";
+        return "\nLanzANDO ATAQUE FLASH";
     }
 }

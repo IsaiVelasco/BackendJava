@@ -71,12 +71,11 @@ public abstract class Spiderman {
 
 
     public String showMessage() {
-        return "\nSpiderman" +
-                "nombre='" + nombre + '\'' +
-                ", alias='" + alias + '\'' +
-                ", genero='" + genero + '\'' +
-                ", tierra de rigen='" + tierraOrigen + '\'' +
-                ", historia='" + resumenHistoria + '\'' +
+        return "\nNombre: '" + nombre + '\'' +
+                "\nAlias: '" + alias + '\'' +
+                "\nGenero: '" + genero + '\'' +
+                "\nTierra de rigen: '" + tierraOrigen + '\'' +
+                "\nHistoria: \n" + resumenHistoria +
                 '\n';
     }
 }

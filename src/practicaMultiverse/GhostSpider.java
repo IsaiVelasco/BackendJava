@@ -10,21 +10,21 @@ public class GhostSpider extends Spiderman implements GhostSpiderActionCallbacks
 
     @Override
     public String viajarAOtroUniverso(String universo, Screen otroUiverso) {
-        return "Usando mi reloj para ciajar a "+universo;
+        return "\nUsando mi reloj para ciajar a "+universo;
     }
 
     @Override
     public String usarPensamientoAnalitico() {
-        return "Neuronas pensando al full";
+        return "\nNeuronas pensando al full";
     }
 
     @Override
     public String soltarTela() {
-        return "Soltando tela con mecanismo que filtra humedad sin tener que recargar a cada rato.";
+        return "\nSoltando tela con mecanismo que filtra humedad sin tener que recargar a cada rato.";
     }
 
     @Override
     public String aderirseAUnMuro() {
-        return "Escalando muro elegantemente";
+        return "\nEGhost scalando muro elegantemente";
     }
 }
