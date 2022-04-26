@@ -20,7 +20,7 @@ public class MainLineUp {
             audioInputStream = AudioSystem.getAudioInputStream(archivowav);
             clip = AudioSystem.getClip();
             clip.open(audioInputStream);
-            System.out.println("audio abierto");
+            System.out.println("audio reproduciendo");
             clip.start();
             Thread.sleep(32000);
             System.out.println("audio iniciado");
