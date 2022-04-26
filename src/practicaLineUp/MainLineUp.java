@@ -14,7 +14,7 @@ public class MainLineUp {
 
         archivowav = new File(
                 FileSystems.getDefault().getPath("")
-                        .toAbsolutePath() + "/audio/conciertofull.wav");
+                        .toAbsolutePath() + "/audio/mezcla.wav");
 
         try {
             audioInputStream = AudioSystem.getAudioInputStream(archivowav);
@@ -22,7 +22,7 @@ public class MainLineUp {
             clip.open(audioInputStream);
             System.out.println("audio reproduciendo");
             clip.start();
-            Thread.sleep(32000);
+            Thread.sleep(32100);
             System.out.println("audio iniciado");
         } catch (LineUnavailableException | IOException | UnsupportedAudioFileException e) {
             System.err.println(e.getMessage());
