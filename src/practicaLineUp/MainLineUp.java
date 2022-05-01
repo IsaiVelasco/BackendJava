@@ -23,7 +23,7 @@ public class MainLineUp {
             System.out.println("audio reproduciendo");
             clip.start();
             Thread.sleep(32100);
-            System.out.println("audio iniciado");
+            System.out.println("audio finalizado");
         } catch (LineUnavailableException | IOException | UnsupportedAudioFileException e) {
             System.err.println(e.getMessage());
         } catch (InterruptedException e) {
