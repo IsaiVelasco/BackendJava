@@ -1,5 +1,5 @@
 package practicaLineUp;
 
-public interface CallMusico {
+public interface CallBanda {
     public void tocar();
 }

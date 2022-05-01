@@ -1,4 +1,4 @@
 package practicaLineUp;
 
-public class Baterista {
+public class Banda {
 }
