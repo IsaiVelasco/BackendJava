@@ -1,6 +1,6 @@
 # BackendJava
 Katas Innovación Virtual
-<h1> Spiderverse </h1>
+<details><summary> <h1> Spiderverse </h1> </summary>
 
 <ul>
   <li>
@@ -17,7 +17,8 @@ Katas Innovación Virtual
   ![spiderVerse](https://user-images.githubusercontent.com/49338963/166129309-e65c5287-342c-4033-9c58-245884c547dd.gif)
   </li>
 </ul>
-
+  
+</details>
 
 
 
