@@ -14,7 +14,7 @@ public class MainLineUp {
 
         archivowav = new File(
                 FileSystems.getDefault().getPath("")
-                        .toAbsolutePath() + "/audio/conciertofull.wav");
+                        .toAbsolutePath() + "/audio/mezcla.wav");
 
         try {
             audioInputStream = AudioSystem.getAudioInputStream(archivowav);
