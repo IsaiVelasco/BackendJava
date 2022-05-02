@@ -11,10 +11,10 @@ public class MainLineUp {
          final File archivowav;
          Clip clip;
          AudioInputStream audioInputStream;
-
+         String nombre = "mezcla";
         archivowav = new File(
                 FileSystems.getDefault().getPath("")
-                        .toAbsolutePath() + "/audio/mezcla.wav");
+                        .toAbsolutePath() + "/audio/"+nombre+".wav");
 
         try {
             audioInputStream = AudioSystem.getAudioInputStream(archivowav);
