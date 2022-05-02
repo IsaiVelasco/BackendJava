@@ -29,4 +29,36 @@ public class Pieza extends Canon{
             e.printStackTrace();
         }
     }
+
+    public File getArchivo() {
+        return archivo;
+    }
+
+    public void setArchivo(File archivo) {
+        this.archivo = archivo;
+    }
+
+    public Clip getClip() {
+        return clip;
+    }
+
+    public void setClip(Clip clip) {
+        this.clip = clip;
+    }
+
+    public AudioInputStream getAis() {
+        return ais;
+    }
+
+    public void setAis(AudioInputStream ais) {
+        this.ais = ais;
+    }
+
+    public String getExtension() {
+        return extension;
+    }
+
+    public void setExtension(String extension) {
+        this.extension = extension;
+    }
 }
