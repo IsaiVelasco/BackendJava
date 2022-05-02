@@ -34,8 +34,11 @@ Cada package con el código se encuentra dentro de **/src**
   <li>
     <h2> Line Up funcionando</h2>
 
-    ...
+    Captura acelerada del funcionamiento del programa.
 
+    ![lineUp](https://user-images.githubusercontent.com/49338963/166337932-410798ab-1957-42ea-8c26-74c367bd937f.gif)
+
+    Video del concierto completo aquí:
 
   </li>
 </ul>
