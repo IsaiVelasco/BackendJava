@@ -1,5 +1,6 @@
 package practicaLineUp;
 
+import imonsh.Colors;
 import imonsh.Screen;
 
 import java.util.List;
@@ -33,8 +34,9 @@ public class Participacion implements CallParticipacion{
     public void comenzarParticipacion(Screen s) {
         for (Pieza p: piezas
              ) {
-            s.out("\n"+"Tocando "+p.getNombre()+" by "+this.banda.getNombre());
-            s.setVisible(true);
+            s.out("\n"+"Tocando "+p.getNombre()+" by "+this.banda.getNombre()+"...","Impact",20,
+                    Colors.RoyalBlue);
+
             this.banda.tocar(p);
             //Hilo para esperar a que toque la banda toda su pieza
             try {

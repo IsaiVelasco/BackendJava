@@ -15,7 +15,7 @@ public class MainLineUp {
         //Datos banda 1
         Banda freeSky = new Banda("Free Sky", "bandas/Drummers.gif");
         Pieza cielo = new Pieza("Cielo",32000, 115, ".wav");
-        Pieza war = new Pieza("War", 32000, 115, ".wav");
+        Pieza war = new Pieza("War", 29600, 115, ".wav");
         List<Pieza> piezasFreeSky = new ArrayList<>();
         piezasFreeSky.add(cielo);
         piezasFreeSky.add(war);
@@ -32,6 +32,8 @@ public class MainLineUp {
         concierto.getParticipaciones().add(new Participacion(piezasDrummers, drummers));
 
         Screen lugar = new Screen(concierto.getLugar());
+        lugar.setLocation(400,20);
+        lugar.setSize(500, 600);
         concierto.runEvent(lugar);
     }
 
