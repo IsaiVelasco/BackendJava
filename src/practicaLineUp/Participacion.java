@@ -1,8 +1,10 @@
 package practicaLineUp;
 
+import imonsh.Screen;
+
 import java.util.List;
 
-public class Participacion {
+public class Participacion implements CallParticipacion{
     private List<Pieza> piezas;
     private Banda banda;
 
@@ -25,5 +27,14 @@ public class Participacion {
 
     public void setBanda(Banda banda) {
         this.banda = banda;
+    }
+
+    @Override
+    public void comenzarParticipacion(Screen s) {
+        for (Pieza p: piezas
+             ) {
+            s.out("Tocando "+p.getNombre()+" by "+this.banda.getNombre());
+            this.banda.tocar(p);
+        }
     }
 }

@@ -1,36 +1,40 @@
 package practicaLineUp;
 
+import imonsh.Screen;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystems;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainLineUp {
 
     public static void main(String[] args) {
-         final File archivowav;
-         Clip clip;
-         AudioInputStream audioInputStream;
-         String nombre = "mezcla";
-        archivowav = new File(
-                FileSystems.getDefault().getPath("")
-                        .toAbsolutePath() + "/audio/"+nombre+".wav");
+        //Datos banda 1
+        Banda freeSky = new Banda("Free Sky", "/bandas/freeSky.gif");
+        Pieza cielo = new Pieza("Cielo",32000, 115, ".wav");
+        Pieza war = new Pieza("War", 32000, 115, "wav");
+        List<Pieza> piezasFreeSky = new ArrayList<>();
+        piezasFreeSky.add(cielo);
+        piezasFreeSky.add(war);
 
-        try {
-            audioInputStream = AudioSystem.getAudioInputStream(archivowav);
-            clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            System.out.println("audio reproduciendo");
-            clip.start();
-            Thread.sleep(32100);
-            System.out.println("audio finalizado");
-        } catch (LineUnavailableException | IOException | UnsupportedAudioFileException e) {
-            System.err.println(e.getMessage());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-    public static void play(){
+        //Datos banda 2
+        Banda drummers = new Banda("Drummers", "/bandas/drummers.gif");
+        Pieza battle = new Pieza("Battle", 32000, 115, ".wav");
+        List<Pieza> piezasDrummers = new ArrayList<>();
+        piezasDrummers.add(battle);
 
+        Evento concierto = new Evento("Talent Music", "Auditorio CDMX");
+
+        concierto.getParticipaciones().add(new Participacion(piezasFreeSky, freeSky));
+        concierto.getParticipaciones().add(new Participacion(piezasDrummers, drummers));
+
+        Screen lugar = new Screen("");
+        Pieza p = new Pieza("canon1", 32000, 115, ".wav");
+        Banda b = new Banda("Sky","imagen");
+        b.tocar(p);
     }
+
 }
