@@ -13,15 +13,15 @@ public class MainLineUp {
 
     public static void main(String[] args) {
         //Datos banda 1
-        Banda freeSky = new Banda("Free Sky", "/bandas/freeSky.gif");
+        Banda freeSky = new Banda("Free Sky", "bandas/freeSky.gif");
         Pieza cielo = new Pieza("Cielo",32000, 115, ".wav");
-        Pieza war = new Pieza("War", 32000, 115, "wav");
+        Pieza war = new Pieza("War", 32000, 115, ".wav");
         List<Pieza> piezasFreeSky = new ArrayList<>();
         piezasFreeSky.add(cielo);
         piezasFreeSky.add(war);
-
+        System.out.println("Todo va bien");
         //Datos banda 2
-        Banda drummers = new Banda("Drummers", "/bandas/drummers.gif");
+        Banda drummers = new Banda("Drummers", "bandas/Drummers.gif");
         Pieza battle = new Pieza("Battle", 32000, 115, ".wav");
         List<Pieza> piezasDrummers = new ArrayList<>();
         piezasDrummers.add(battle);
@@ -31,10 +31,8 @@ public class MainLineUp {
         concierto.getParticipaciones().add(new Participacion(piezasFreeSky, freeSky));
         concierto.getParticipaciones().add(new Participacion(piezasDrummers, drummers));
 
-        Screen lugar = new Screen("");
-        Pieza p = new Pieza("canon1", 32000, 115, ".wav");
-        Banda b = new Banda("Sky","imagen");
-        b.tocar(p);
+        Screen lugar = new Screen(concierto.getLugar());
+        concierto.runEvent(lugar);
     }
 
 }

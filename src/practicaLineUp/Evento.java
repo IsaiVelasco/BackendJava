@@ -35,10 +35,11 @@ public class Evento  implements CallEvento{
     @Override
     public void cambiarEscenario(Screen s, Participacion part){
         s.cls();
-        s.repaint();
-        s.out(this.nombre,"Impact",25, Colors.FussionRed);
-        s.out(this.lugar,"Yu Gothic UI",25, Colors.BalticSea);
+
+        s.out(this.nombre+"\n","Impact",25, Colors.FussionRed);
+        s.out(this.lugar+"\n","Yu Gothic UI",25, Colors.BalticSea);
         s.showImage(part.getBanda().getImagen());
+        s.repaint();
     }
     public String getNombre() {
         return nombre;

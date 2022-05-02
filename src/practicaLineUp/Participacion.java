@@ -33,8 +33,16 @@ public class Participacion implements CallParticipacion{
     public void comenzarParticipacion(Screen s) {
         for (Pieza p: piezas
              ) {
-            s.out("Tocando "+p.getNombre()+" by "+this.banda.getNombre());
+            s.out("\n"+"Tocando "+p.getNombre()+" by "+this.banda.getNombre());
+            s.setVisible(true);
             this.banda.tocar(p);
+            //Hilo para esperar a que toque la banda toda su pieza
+            try {
+                Thread.sleep(p.getDuracion());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("acabó la banda "+banda.getNombre()+" la pieza "+p.getNombre());
         }
     }
 }
