@@ -13,7 +13,7 @@ public class MainLineUp {
 
     public static void main(String[] args) {
         //Datos banda 1
-        Banda freeSky = new Banda("Free Sky", "bandas/freeSky.gif");
+        Banda freeSky = new Banda("Free Sky", "bandas/Drummers.gif");
         Pieza cielo = new Pieza("Cielo",32000, 115, ".wav");
         Pieza war = new Pieza("War", 32000, 115, ".wav");
         List<Pieza> piezasFreeSky = new ArrayList<>();
@@ -21,7 +21,7 @@ public class MainLineUp {
         piezasFreeSky.add(war);
         System.out.println("Todo va bien");
         //Datos banda 2
-        Banda drummers = new Banda("Drummers", "bandas/Drummers.gif");
+        Banda drummers = new Banda("Drummers", "bandas/freeSkyc.gif");
         Pieza battle = new Pieza("Battle", 32000, 115, ".wav");
         List<Pieza> piezasDrummers = new ArrayList<>();
         piezasDrummers.add(battle);

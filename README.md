@@ -23,5 +23,22 @@ Cada package con el código se encuentra dentro de **/src**
 </details>
 
 
+<details><summary> <h1> Line Up</h1> </summary>
 
+<ul>
+  <li>
+    <h2> Diagrama de clases</h2>
+    <img src="https://user-images.githubusercontent.com/49338963/166189392-9d381a90-9309-411e-b3c6-f80c45cfd455.png" alt="drawing" width="600"/>
+
+  </li>
+  <li>
+    <h2> Line Up funcionando</h2>
+
+    ...
+
+
+  </li>
+</ul>
+
+</details>
 
